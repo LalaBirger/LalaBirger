@@ -259,6 +259,9 @@ h5 {
 /* end work */
 
 /* start about */
+#technologies {
+  background-color: grey;
+}
 #technologies h4 {
   padding: 15px 0;
   color: #d43f52;
