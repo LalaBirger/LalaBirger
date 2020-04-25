@@ -198,6 +198,9 @@ h5 {
   color: black;
   margin-top: 180px;
 }
+#home h3 {
+  margin-bottom: 30px 0px;
+}
 #home h4 {
   margin-bottom: 30px 0px;
 }
@@ -260,11 +263,11 @@ h5 {
 
 /* start about */
 #technologies {
-  background-color: grey;
+  background-color: rgb(49, 8, 8);
 }
-#technologies h4 {
+#technologies h3 {
   padding: 15px 0;
-  color: #d43f52;
+  color: #f7d66c;
 }
 #technologies .progress {
   border-radius: 4px;
@@ -272,7 +275,7 @@ h5 {
   height: 4px;
 }
 #technologies .progress .progress-bar-danger {
-  background: #d43f52;
+  background: #e77584;
 }
 #about .text-top {
   padding-top: 50px;
