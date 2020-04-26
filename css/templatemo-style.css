@@ -263,12 +263,13 @@ h5 {
 
 /* start about */
 #technologies {
-  background-color: rgb(49, 8, 8);
+  background-color: rgb(228, 220, 220);
 }
 #technologies h3 {
-  padding: 15px 0;
-  color: #f7d66c;
+  padding: 0px 0;
+  color: #fae5a0;
 }
+
 #technologies .progress {
   border-radius: 4px;
   background: #ffffff;
@@ -290,7 +291,7 @@ h5 {
   font-weight: bold;
   float: right;
 }
-#imagenAboutMe {
+.imagenAboutMe {
   max-width: 100%;
   max-height: 100%;
   /* height: auto; */
