@@ -263,29 +263,32 @@ h5 {
 
 /* start about */
 #technologies {
-  background-color: rgb(228, 220, 220);
+  background-color: rgb(253, 253, 253);
+}
+#technologies h2 {
+  color: black;
 }
 #technologies h3 {
   padding: 0px 0;
-  color: #fae5a0;
+  color: #fcb2ef;
 }
 
 #technologies .progress {
   border-radius: 4px;
-  background: #ffffff;
+  background: #73cf70;
   height: 4px;
 }
 #technologies .progress .progress-bar-danger {
-  background: #e77584;
+  background: hsl(76, 64%, 73%);
 }
 #about .text-top {
   padding-top: 50px;
 }
 #technologies span {
-  color: #ffffff;
+  color: #bd99e5;
   font-weight: bold;
   display: block;
-  padding-bottom: 6px;
+  padding-bottom: 0px;
 }
 #technologies small {
   font-weight: bold;
