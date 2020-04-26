@@ -265,6 +265,12 @@ h5 {
 /* end work */
 
 /* start about */
+#video {
+  background: center center url(../images/IMG_3053.MOV);
+}
+/* end work */
+
+/* start about */
 #technologies {
   background-color: rgb(43, 43, 43);
 }
@@ -280,9 +286,12 @@ h5 {
   border-radius: 4px;
   background: hsl(97, 58%, 71%);
   height: 4px;
+  padding-bottom: 0px;
+  margin-bottom: 0.5em;
 }
 #technologies .progress .progress-bar-danger {
   background: rgb(255, 229, 156);
+  padding-bottom: 0px;
 }
 #about .text-top {
   padding-top: 50px;
@@ -310,7 +319,7 @@ h5 {
   text-align: center;
 }
 #portfolio h2 {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 #portfolio h1 {
   text-align: center;
