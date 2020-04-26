@@ -35,6 +35,7 @@ body {
 #portfolio,
 #portfolio .fp-slide,
 #portfolio .fp-tableCell,
+#video,
 footer,
 footer .fp-slide,
 footer .fp-tableCell {
@@ -51,6 +52,7 @@ h4,
 h5 {
   color: #ffffff;
   font-weight: bold;
+  padding-bottom: 1em;
 }
 /* end all heading */
 
@@ -61,7 +63,7 @@ h5 {
 #contact,
 #technologies {
   padding-top: 100px;
-  padding-bottom: 120px;
+  padding-bottom: 20px;
 }
 /* end all section */
 
@@ -227,11 +229,11 @@ h5 {
 
 /* start work */
 #work {
-  background: #fffbe2;
+  background: #000000;
 }
 #work h2 {
   text-align: center;
-  color: #000000;
+  color: #ffffff;
 }
 #work h3 {
   color: #680d0d;
@@ -272,32 +274,34 @@ h5 {
 
 /* start about */
 #technologies {
-  background-color: rgb(43, 43, 43);
+  background-color: rgb(255, 255, 255);
 }
 #technologies h2 {
-  color: rgb(255, 255, 255);
+  color: rgb(131, 129, 127);
+  text-align: center;
+  margin-bottom: 2em;
 }
 #technologies h3 {
   padding: 0px 0;
-  color: #ff9c2a;
+  color: rgb(218, 194, 157);
 }
 
 #technologies .progress {
   border-radius: 4px;
-  background: hsl(97, 58%, 71%);
+  background: hsl(33, 12%, 51%);
   height: 4px;
   padding-bottom: 0px;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.95em;
 }
 #technologies .progress .progress-bar-danger {
-  background: rgb(255, 229, 156);
+  background: #dab291;
   padding-bottom: 0px;
 }
 #about .text-top {
   padding-top: 50px;
 }
 #technologies span {
-  color: #fc98ff;
+  color: #a8a097;
   font-weight: bold;
   display: block;
   padding-bottom: 0px;
@@ -315,11 +319,12 @@ h5 {
 
 /* start portfolio */
 #portfolio {
-  background: #000000;
+  background: #ffffff;
   text-align: center;
 }
 #portfolio h2 {
-  padding-bottom: 80px;
+  padding-bottom: 1em;
+  color: #000000;
 }
 #portfolio h1 {
   text-align: center;
@@ -360,7 +365,26 @@ h5 {
 }
 /* end portfolio */
 
+.frame-area {
+  display: block;
+  width: 100%; /* RESPONSIVE WIDTH */
+  max-width: 100em;
+  height: 40em;
+  overflow: auto; /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #fdcdff 1px solid;
+  margin: 0px;
+  padding: 0px;
+}
+
 /* start contact */
+
+#contact {
+  background-color: #000000;
+}
+
+#contact h2 {
+  color: #ffffff;
+}
 
 #contact address {
   padding-bottom: 18px;
@@ -375,7 +399,7 @@ h5 {
 #contact .fa {
   border: 2px solid #ffffff;
   border-radius: 50%;
-  color: #d43f52;
+  color: #c0ad8b;
   width: 50px;
   height: 50px;
   line-height: 45px;
@@ -437,6 +461,6 @@ footer hr {
   margin-right: 10px;
 }
 .social-icon li a:hover {
-  color: #d43f52;
+  color: #ffd2f9;
 }
 /* end social icon */
