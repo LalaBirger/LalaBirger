@@ -9,7 +9,7 @@ https://templatemo.com/tm-458-lavish
 body {
   /* background: #d3a672;
    */
-  background: black;
+  background: rgb(255, 255, 255);
   color: #999;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -20,9 +20,6 @@ body {
 #home,
 #home .fp-slide,
 #home .fp-tableCell,
-#work,
-#work .fp-slide,
-#work .fp-tableCell,
 #about,
 #about .fp-slide,
 #about .fp-tableCell,
@@ -36,6 +33,14 @@ body {
 #portfolio .fp-slide,
 #portfolio .fp-tableCell,
 #video,
+#video .fp-slide,
+#video .fp-tableCell,
+#buy,
+#buy .fp-slide,
+#buy .fp-tableCell,
+#work,
+#work .fp-slide,
+#work .fp-tableCell,
 footer,
 footer .fp-slide,
 footer .fp-tableCell {
@@ -50,7 +55,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: #ffffff;
+  color: #000000;
   font-weight: bold;
   padding-bottom: 1em;
 }
@@ -61,6 +66,8 @@ h5 {
 #about,
 #portfolio,
 #contact,
+#buy,
+#video,
 #technologies {
   padding-top: 100px;
   padding-bottom: 20px;
@@ -227,55 +234,32 @@ h5 {
 }
 /* end home */
 
-/* start work */
-#work {
-  background: #000000;
+/* start video */
+video {
+  width: 100%;
+  height: auto;
 }
-#work h2 {
-  text-align: center;
+/* end work */
+
+/* start about */
+#about {
+  background-color: black;
+}
+#about h2 {
   color: #ffffff;
 }
-#work h3 {
-  color: #680d0d;
+#about .text-top {
+  padding-top: 50px;
 }
-#work .media {
-  margin-top: 30px;
+.imagenAboutMe {
+  max-width: 100%;
+  max-height: 100%;
+  /* height: auto; */
 }
+/* end about */
 
-#work .media .fa {
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  color: #d43f52;
-  font-size: 24px;
-  margin-right: 24px;
-  width: 60px;
-  height: 60px;
-  line-height: 55px;
-  text-align: center;
-  vertical-align: middle;
-  transition: all 0.4s ease-in;
-}
-#work .media .fa:hover {
-  background: #ffffff;
-  cursor: pointer;
-}
-#work .media .media-heading {
-  font-weight: 600;
-  font-size: 20px;
-  padding-bottom: 10px;
-}
-/* end work */
+/* start technologies */
 
-/* start about */
-#video {
-  background: center center url(../images/IMG_3053.MOV);
-}
-/* end work */
-
-/* start about */
-#technologies {
-  background-color: rgb(255, 255, 255);
-}
 #technologies h2 {
   color: rgb(131, 129, 127);
   text-align: center;
@@ -285,7 +269,6 @@ h5 {
   padding: 0px 0;
   color: rgb(218, 194, 157);
 }
-
 #technologies .progress {
   border-radius: 4px;
   background: hsl(33, 12%, 51%);
@@ -297,9 +280,6 @@ h5 {
   background: #dab291;
   padding-bottom: 0px;
 }
-#about .text-top {
-  padding-top: 50px;
-}
 #technologies span {
   color: #a8a097;
   font-weight: bold;
@@ -310,12 +290,7 @@ h5 {
   font-weight: bold;
   float: right;
 }
-.imagenAboutMe {
-  max-width: 100%;
-  max-height: 100%;
-  /* height: auto; */
-}
-/* end about */
+/* end technologies */
 
 /* start portfolio */
 #portfolio {
@@ -364,6 +339,21 @@ h5 {
   transform: scale(0.7);
 }
 /* end portfolio */
+
+#buy h2 {
+  text-align: center;
+}
+
+#video h2 {
+  text-align: center;
+}
+#video {
+  padding-bottom: 0%;
+}
+
+.fullpage {
+  margin-bottom: 0;
+}
 
 .frame-area {
   display: block;
@@ -430,17 +420,45 @@ h5 {
 }
 /* end contact */
 
-/* start footer */
-footer {
-  border-top: 1px solid #090909;
+/* start work */
+#work {
+  background: #000000;
+  padding-bottom: 1em;
+}
+#work h2 {
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 20px;
+  color: #ffffff;
 }
-footer hr {
-  width: 100px;
+#work h3 {
+  color: #680d0d;
 }
-/* end footer */
+#work .media {
+  margin-top: 30px;
+}
+
+#work .media .fa {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  color: #d43f52;
+  font-size: 24px;
+  margin-right: 24px;
+  width: 60px;
+  height: 60px;
+  line-height: 55px;
+  text-align: center;
+  vertical-align: middle;
+  transition: all 0.4s ease-in;
+}
+#work .media .fa:hover {
+  background: #ffffff;
+  cursor: pointer;
+}
+#work .media .media-heading {
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+/* end work */
 
 /* start social icon */
 .social-icon {
