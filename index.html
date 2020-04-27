@@ -68,6 +68,71 @@
       </div>
       <!-- end home -->
 
+      <!-- start navbar -->
+
+      <nav class="navbar navbar-default">
+        <div id="navbar" class="sticky">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">TOP</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div
+            class="collapse navbar-collapse"
+            id="bs-example-navbar-collapse-1"
+          >
+            <ul class="nav navbar-nav">
+              <li class="active">
+                <a href="#about"
+                  >About Me <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li><a href="#tbd">What I'm Interested In</a></li>
+              <li><a href="#technologies">Technologies</a></li>
+              <li class="dropdown">
+                <a
+                  href="#portfolio"
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >My Portfolio <span class="caret"></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a href="videogames.html">Video games</a></li>
+                  <li><a href="architecture.html">Architecture</a></li>
+                  <li><a href="editorial.html">Editorial</a></li>
+                  <li><a href="illustrations.html">Illustration</a></li>
+                  <li><a href="tattoos.html">Tattoos</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+
+      <!-- end navbar -->
+
       <!-- start about -->
       <div id="about" class="section">
         <div class="container">
@@ -128,22 +193,29 @@
                 projects, trying to make collaborative designs by including the
                 perspective of my client in every step of the creative process.
                 Body movement is fundamental to me, so my work encompasses the
-                idea of distortion and motion.
+                idea of distortion and motion. Also, I've been working on
+                different canvases and technics, doing some painting and digital
+                illustration. For my next project coming up I hope to blend some
+                of my artworks into a video game I'm starting to craft.
               </p>
 
               <h2>WHAT I'M INTERESTED IN</h2>
 
               <p style="text-align: justify; text-indent: 3em;">
                 I'm driven by the idea of creating worlds. I think video games
-                are the ultimate artistic expression. I've been creating assets
-                for video games for a couple of years now, and this year I
-                participated in the Global Game Jam (2020), where I had the
-                chance to create a video game from scratch in a few days. I was
-                part of a team with 4 programmers, which made me completely
-                responsible for the art. It was an amazing experience. I think
-                my prolific and interdisciplinary path in design and art studies
-                makes me perfect for a job in video games. I'm especially
-                interested in working in art direction.
+                are the ultimate artistic expression. I'm particularly
+                fascinated by the proccess of creating aesthetics. Designing an
+                entirely world for the game to develop, from the colors, the
+                textures and the general atmosphere, to the smallest details and
+                even the perfect typography. and the The user interface and the
+                user experience aesthetic appeling and touching. I've been
+                creating assets for video games for a couple of years now, and
+                this year at Global Game Jam (2020) I had the chance to create
+                the art of a video game from scratch in just a few days. It was
+                an amazing experience. I think my prolific and interdisciplinary
+                path in design and art studies makes me perfect for a job in
+                video games. I'm especially interested in working in art
+                direction.
               </p>
             </div>
           </div>
@@ -476,6 +548,28 @@
       </div>
       <!-- end contact me -->
     </div>
+
+    <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      // Get the navbar
+      var navbar = document.getElementById("navbar");
+
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop;
+
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
