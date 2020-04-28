@@ -183,6 +183,18 @@ h5 {
 }
 /* end simpletextrotator */
 
+/* #navbar {
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+#navbar.transition {
+  background-color: black;
+  color: white;
+} */
+
 /* start home */
 #home {
   background: center center url("../images/home-bg.jpg");
@@ -484,38 +496,10 @@ video {
 }
 /* end social icon */
 
-/* start navbar */
-
 #navbar {
-  overflow: hidden;
-  background-color: #333;
+  transition: opacity 1s linear;
 }
 
-/* Navbar links */
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
+#navbar.hidden {
+  opacity: 0;
 }
-
-/* Page content */
-.content {
-  padding: 16px;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
-
-/* end navbar */
