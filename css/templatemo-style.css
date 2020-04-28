@@ -496,10 +496,6 @@ video {
 }
 /* end social icon */
 
-#navbar {
-  transition: opacity 1s linear;
-}
-
 #navbar.hidden {
-  opacity: 0;
+  display: none;
 }

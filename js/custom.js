@@ -11,10 +11,10 @@ $(document).ready(function () {
 });
 
 const navbar = document.getElementById("navbar");
-const navbarPosition = 1000;
+const navbarPositionStart = 650;
+const navbarPositionEnd = 850;
 
 console.log(navbar);
-console.log(navbarPosition);
 
 // wow
 $(function () {
@@ -24,18 +24,28 @@ $(function () {
 
 window.onscroll = function () {
   myFunction();
+  console.log(window.pageYOffset);
 };
 
-function myFunction() {
-  if (window.pageYOffset > navbarPosition) {
-    navbar.classList.add("navbar-fixed-top");
+const myFunction = () => {
+  if (
+    window.pageYOffset >= navbarPositionEnd &&
+    !navbar.classList.contains("navbar-fixed-top")
+  ) {
+    navbar.classList.toggle("navbar-fixed-top");
     navbar.classList.toggle("hidden");
-
-    // navbar.classList.toggle("transition");
+    navbar.classList.remove("fadeOutUp");
+    navbar.classList.add("fadeInDown");
+    console.log("added");
   }
-  if (window.pageYOffset < navbarPosition) {
-    navbar.classList.remove("navbar-fixed-top");
+  if (
+    window.pageYOffset <= navbarPositionStart &&
+    navbar.classList.contains("navbar-fixed-top")
+  ) {
+    navbar.classList.remove("fadeInDown");
+    navbar.classList.add("fadeOutUp");
     navbar.classList.toggle("hidden");
-    // navbar.classList.toggle("transition");
+    navbar.classList.toggle("navbar-fixed-top");
+    console.log("removed");
   }
-}
+};
