@@ -198,6 +198,17 @@ h5 {
   color: white;
 } */
 
+#navbar .navbar-brand {
+  padding-top: auto;
+  padding-bottom: auto;
+  height: 60px;
+  width: 60px;
+}
+
+#navbar .nav {
+  padding-top: 5px;
+}
+
 /* start home */
 #home {
   background: center center url("../images/home-bg.jpg");
@@ -254,6 +265,7 @@ h5 {
 video {
   width: 100%;
   height: auto;
+  display: block;
 }
 /* end work */
 
