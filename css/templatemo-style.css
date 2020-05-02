@@ -320,14 +320,14 @@ video {
 #portfolio h1 {
   text-align: center;
   vertical-align: middle;
-  line-height: 150px;
+  line-height: 4em;
   color: BLACK;
   opacity: 1;
 }
 #portfolio .tituloenmedio {
   text-align: center;
   vertical-align: middle;
-  line-height: 350px;
+  line-height: 10em;
   color: BLACK;
   opacity: 1;
 }
@@ -523,7 +523,12 @@ video {
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: rgba(
+    85,
+    85,
+    85,
+    0.349
+  ); /* Add a dark-grey background on hover */
 }
 
 /* .glyphicon {
